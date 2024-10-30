@@ -8,6 +8,7 @@ class Pessoa{
 
 //Constructor
   Pessoa(String nome,String cargo,int idade,int tempoDeTra){
+    //o "THIS" pode ser colocado dendo da classe no parametro
     this.nome = nome;
     this.cargo = cargo;
     this.idade = idade;
