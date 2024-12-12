@@ -37,8 +37,20 @@ bool questsMult(int x, int y) {
       return false;
     }
 }
+  //Função Questôes Adição
+bool questsAdi(int x, int y) {
+    print('Quanto é $x + $y?');
+    int resposta = int.parse(stdin.readLineSync()!);
+    if (resposta == x + y) {
+      print("Resposta Correta!");
+      return true;
+    }else{
+      print("Resposta Incorreta!");
+      return false;
+    }
+}
 
-// Função para exibir o resultado final
+  // Função para exibir o resultado final
 void exibirResultado(int certas, int erradas) {
   print("\nResultados:");
   print("Respostas certas: $certas");
